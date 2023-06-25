@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "8130e7f8-d696-4933-a13e-72117239a745",
+		"name": "Mehmet's Vize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27431399"
+	},
+	"item": [
+		{
+			"name": "/create-member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Mehmet11\",\n    \"eposta\": \"aaa@aaa.com\",\n    \"password\": \"kkss23\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/create-member",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"create-member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/create-rezervation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"uye_id\": 5,\n    \"ev_id\": 50,\n    \"baslangic_tarihi\": \"2023-05-11\",\n    \"bitis_tarihi\": \"2023-05-20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/create-reservation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"create-reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/create-home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ev_id\": 2,\n    \"ev_sahibi_id\": 4,\n    \"sehir\": \"Ankara\",\n    \"oda_sayisi\": 6,\n    \"haftalik_ucret\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/create-home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"create-home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/create-host",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ev_sahibi_adi\": \"Mehmet Reis4\",\n    \"telefon\": 32324323230000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/create-host",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"create-host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/update-host",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"4\",\n    \"ev_sahibi_adi\": \"Mehmet 5555\",\n    \"telefon\": 1111000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/update-host",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"update-host"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/update-rezervation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":3,\n    \"uye_id\": 2,\n    \"ev_id\": 8,\n    \"baslangic_tarihi\": \"2023-07-11\",\n    \"bitis_tarihi\": \"2023-05-20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/update-reservation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"update-reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/update-home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"ev_id\": 2,\n    \"ev_sahibi_id\": 4,\n    \"sehir\": \"Sinopaaa\",\n    \"oda_sayisi\": 6,\n    \"haftalik_ucret\": 5000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/update-home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"update-home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete-reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/delete-reservation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"delete-reservation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete-home",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/delete-home",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"delete-home"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/delete-host",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"8\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/delete-host",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"delete-host"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
